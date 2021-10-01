@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+
+        <!-- css.import -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/specialRule.css">
+        
+        <!-- javascript.import -->
+        <script src="extLibrary/jquery-3.6.0.min.js"></script>
+        <script src="extLibrary/fabric.min.js"></script>
+        <script src="js/specialRule.js"></script>
+
+        
+    </head>
+    <body>
+            <header>
+                <ul>
+                    
+                </ul>
+            </header>
+            
+            <section id= "section" class="section">
+                
+                <div class="button_place">
+                    <div class="button_place__button">
+                        <div class="button_place__container">
+                            <label>
+                                <input id="uploader" class="uploader" type="file" accept="image/*">
+                                    <span class="material-icons" title="file open">
+                                        folder_open 
+                                    </span>
+                            </label>
+                            <label class="icon-button">
+                                <input id = "gridCheckbox" type="checkbox">
+                                <span id="gridButton" class="material-icons" title="grid">grid_on</span>
+                            </label>
+                            <label class="icon-button" onclick="condition()">
+                                <span id="conditionButton"  class="material-icons" title="condition">image_search</span>
+                            </label>
+                            <label class="icon-button" onclick="action()">
+                                <span id="actionButton" class="material-icons" title="action">aspect_ratio</span>
+                            </label>
+                            <label class="icon-button" onclick="canDraw()">
+                                <span id="drawButton" class="material-icons" title="draw">brush</span>
+                            </label>
+                        </div>
+                        <div class='downloadButton'>
+                            <label class="fileDownload" onclick="download()"><span id="fileDownloadButton" class="material-icons" title="download">file_download</span></label>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div> 
+                <div class="canvasContainer" style="display:flex">
+                        
+
+                    
+                    <div id="container" class="container">
+                        <div id="filename">filename:</div>
+                        <canvas id="canvas"> </canvas>
+                        <div class="canvasContainer__drawBox">
+                            <div>
+                                <span>Draw Type: </span>
+                                <select id="drawType">
+                                    <option>square</option>
+                                    <option>pen</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span>Color: </span>
+                                <select id="drawColor" class="drawColor">
+                                    <option value="white"></option>
+                                    <option value="black"></option>
+                                    <option value="red"></option>
+                                    <option value="green"></option>
+                                    <option value="blue"></option>
+                                </select>
+                            </div>
+                            <div class="canvasContainer__brushSize">
+                                <span>  Line Width: </span><span id="sliderValue" class="sliderValue">30  </span>
+                                <input type="range" class="container__brushRange" value="30" min="1" max="100" onchange="sliderValue(this.value)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <footer class="footer" >
+                <span></span>
+                <span class="footer__copyright">
+                </span>
+                
+            </footer>
+        
+    </body>
+</html>

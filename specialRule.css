@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    user-select:none;
+    overflow:scroll;
+}
+
+header{
+    display : flex;
+    min-width:1000px;
+    height: 80px;
+    margin-left: auto;
+    align-items: center;
+    background: linear-gradient(to right, white, skyblue)
+}
+
+.section {
+    width: 100%;
+    min-width:1000px;
+    min-height:580px;
+    height:calc(100vh - 160px);
+}
+
+.button_place {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    grid-template-columns: 1fr 1fr;
+}
+.button_place__button{
+    top: 10px;
+    display:flex;
+}
+.button_place__label{
+    position:absolute;
+    top: 95px;
+    margin-left: 100px;
+}
+canvas{
+    border:1px solid black;
+}
+
+.button { 
+    text-align:center;
+    margin: auto;
+}
+
+
+#gridCheckbox {
+    display:none;
+}
+
+.header__container {
+    display:flex;
+}
+
+.header__name {
+    list-style: none;
+    flex-grow: 1; flex-shrink: 0; flex-basis: 150px;
+}
+
+.container {
+    height:(80vh);
+    min-height: 500px;
+}
+
+.material-icons {
+    background-color: #E6E6E6;
+    margin-right: 30px;
+    border-radius: 5px;
+    font-size:36px;
+    cursor: pointer;
+}
+
+.uploader {
+    display:none;
+}
+
+.button_place__container {
+    margin-left:100px;
+    margin-top: 3px;
+    display:flex;
+    flex-direction:row;
+}
+.button_place__condition_label {
+    margin-left:14px
+}
+.button_place__action_label {
+    margin-left:7px
+}
+.button_place__draw_label {
+    margin-left:20px
+}
+.button_place__openImg_label {
+    margin-left:6px
+}
+.downloadButton {
+    
+    margin-top:3px;
+    display:flex;   
+    flex-direction :row-reverse;
+}
+
+#container {
+    
+    display:flex;
+    flex-direction:column;
+}
+
+#Imgcontainer {
+    display:flex;
+    flex-direction:column;
+}
+
+#filename {
+    visibility : hidden;
+    height: 18px;
+}
+.canvasContainer__drawBox {
+    position:absolute;
+    margin-left:300px;
+    visibility:hidden;
+    background-color: white;
+    border:3px solid rgba(163, 143, 143, 0.5);
+    z-index: 1;
+}
+
+.container__brushRange {
+    width:250px;
+}
+
+#uploadedImg {
+    display:none;
+}
+.header__irmLogo {
+    margin-top : 8px;
+    margin-left: 10px;
+    float:right;;
+    height:75px;
+}
+
+
+
+
+.footer__irmLogoFooter{
+    height:60px;
+    margin-left:60%;
+}
+
+.footer__copyright{
+    margin-top:15px;
+    height:30px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.sliderValue{
+    background-color: none;
+}
+
+.canvasContainer__brushSize{
+    display : none;
+}
+
+.drawColor{
+    width:100px;
+}
+
+
